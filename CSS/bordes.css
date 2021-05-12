@@ -1,0 +1,21 @@
+body{
+    margin-top: 40px;
+    background: rgb(138, 138, 230);
+}
+
+.row{
+    margin-bottom: 20px;
+}
+
+.padre{
+    background: blue;
+    padding: 20px;
+}
+
+.hijo{
+    padding: 50px;
+    width: 200px;
+    background: black;
+    color: azure;
+    margin: 20px;
+}

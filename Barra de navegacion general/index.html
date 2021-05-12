@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+	<div class="container">
+
+		<div class="row my-5">
+			<div class="col">
+				<h1>Navbars</h1>
+
+				<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-bottom">
+					<a href="#" class="navbar-brand">Mi marca</a>
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#miMenu">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="miMenu">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a href="#" class="nav-link active">Inicio</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sobre nosotros</a>
+
+								<div class="dropdown-menu">
+									<a href="#" class="dropdown-item">Item</a>
+									<a href="#" class="dropdown-item">Item</a>
+									<a href="#" class="dropdown-item">Item</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Contacto</a>
+							</li>
+						</ul>
+						<form class="form-inline">
+							<input type="text" class="form-control" placeholder="Buscar">
+							<button class="btn btn-outline-secondary" type="submit">Buscar</button>
+						</form>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+	
+
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

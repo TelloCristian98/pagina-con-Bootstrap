@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina con Bordes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/CSS/bordes.css" />
+  </head>
+  <body>
+    <!-- bordes -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="border border-primary rounded">border-primary</p>
+          <p class="border border-secondary rounded-top">border-secondary</p>
+          <p class="border border-success rounded-bottom">border-success</p>
+          <p class="border border-danger rounded-left">border-danger</p>
+          <p class="border border-warning rounded-right">border-warning</p>
+          <p class="border border-info">border-info</p>
+          <p class="border border-light">border-light</p>
+          <p class="border border-dark">border-dark</p>
+          <p class="border border-white">border-white</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="padre clearfix">
+            <div class="hijo float-left float-md-right float-lg-left">
+              Izquierda
+            </div>
+            <div class="hijo float-right">Derecha</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- texto -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="border text-primary">text-primary</p>
+          <p class="border text-secondary">text-secondary</p>
+          <p class="border text-success">text-success</p>
+          <p class="border text-danger">text-danger</p>
+          <p class="border text-warning">text-warning</p>
+          <p class="border text-info">text-info</p>
+          <p class="border text-light">text-light</p>
+          <p class="border text-dark">text-dark</p>
+          <p class="border text-white">text-white</p>
+          <p class="border text-muted">text-muted</p>
+        </div>
+      </div>
+
+      <!-- links -->
+      <div class="row">
+          <div class="col">            
+            <p><a href="#" class="border text-primary">Priamry link</a></p>
+            <p><a href="#" class="border text-secondary">Secondary link</a></p>
+            <p><a href="#" class="border text-success">Success link</a></p>
+            <p><a href="#" class="border text-danger">Danger link</a></p>
+            <p><a href="#" class="border text-warning">Warning link</a></p>
+            <p><a href="#" class="border text-info">Info link</a></p>
+            <p><a href="#" class="border text-light">Light link</a></p>
+            <p><a href="#" class="border text-dark">Dark link</a></p>
+            <p><a href="#" class="border text-white">White link</a></p>
+            <p><a href="#" class="border text-primary">Muted link</a></p>
+          </div>
+      </div>
+    </div>
+
+    <!-- fondos -->
+    <div class="row">
+        <div class="col">            
+            <div class="border bg-primary">bg-primary</div>
+            <div class="border bg-secondary">bg-secondary</div>
+            <div class="border bg-success">bg-success</div>
+            <div class="border bg-danger">bg-danger</div>
+            <div class="border bg-warning">bg-warning</div>
+            <div class="border bg-info">bg-info</div>
+            <div class="border bg-light">bg-light</div>
+            <div class="border bg-dark">bg-dark</div>
+            <div class="border bg-white">bg-white</div>
+            <div class="border bg-muted">bg-muted</div>
+        </div>
+    </div>
+  </div>
+
+  <!-- video -->
+  <!-- 
+    21:9 aspect ratio
+    <div class="embed-responsive embed-responsive-21by9"></div>
+
+    16:9 aspect ratio
+    <div class="embed-responsive embed-responsive-16by9"></div>
+
+    4:3 aspect ratio
+    <div class="embed-responsive embed-responsive-4by3"></div>
+
+    1:1 aspect ratio
+    <div class="embed-responsive embed-responsive-1by1"></div>
+   -->
+
+   <div class="container">
+     <div class="row">
+       <div class="col">
+         <h1>Embed</h1>
+         <div class="embed-responsive embed-responsive-16by9">
+         <iframe class="embed-responsive-item" 
+         src="https://www.youtube.com/embed/Mo27WZjG03Y" title="YouTube video player" 
+         frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+         allowfullscreen></iframe>
+
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <!-- Padding and Margin -->
+   <!-- 
+     m - para margin
+     p - para padding
+
+     t - top
+     b - bottom
+     l - left
+     r - right
+     x - left and right
+     y - top and bottom
+
+     0 - to eliminate margin or padding
+     1 - .25em
+     2 - .5em
+     3 - 1em
+     4 - 1.5em
+     5 - 3em
+    -->
+
+    <!-- Tamaños -->
+    <!-- 
+      w = weight
+      w-25%
+      w-50%
+      w-75%
+      w-100%
+
+      h = height
+      h-25%
+      h-50%
+      h-75%
+      h-100%
+
+      mw-100%
+      mh-100%
+     -->
+
+
+    <!-- Display Flex muy util -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <section>
+            <h3>Vamos a ver todo referente a Flexbox</h3>
+            <div class="p-4 bg-primary d-flex">Tengo display: flex</div>
+            <div class="p-4 bg-success d-inline-flex">Tengo display: inline-flex</div>
+          </section>          
+
+          <hr class="bg-warning">
+
+          <section>
+            <h3>Direccion</h3>
+            <div class="d-flex p-4 text-white flex-column">
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+            </div>
+          </section>  
+          
+          <hr class="bg-warning">
+
+          <section>
+            <h1>Justify content</h1>
+            <h4>justify-content-center</h4>
+            <div class="d-flex p-4 text-white justify-content-center">
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+            </div>
+            <h4>justify-content-end</h4>
+            <div class="d-flex p-4 text-white justify-content-end">
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+            </div>
+            <h4>justify-content-start</h4>
+            <div class="d-flex p-4 text-white justify-content-start">
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+            </div>
+            <h4>justify-content-between</h4>
+            <div class="d-flex p-4 text-white justify-content-between">
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+            </div>
+          </section>
+          
+          <hr class="bg-warning">
+
+          <section>
+            <h1>Align items and align-self</h1>
+            <h4>align-items-center</h4>
+            <div class="d-flex p-4 text-white border border-dark align-items-center" style="height: 500px;">
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+            </div>
+            <h4>align-items-start</h4>
+            <div class="d-flex p-4 text-white border border-dark align-items-start" style="height: 500px;">
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+            </div>
+            <h4>align-items-end</h4>
+            <div class="d-flex p-4 text-white border border-dark align-items-end" style="height: 500px;">
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-warning mx-3 p-2">Lorem, ipsum dolor.</p>
+            </div>
+          </section>
+
+          <hr class="bg-warning">
+
+          <section>
+            <h1>Wrap</h1>
+            <h4>flex-wrap</h4>
+            <div class="d-flex p-4 text-white flex-wrap">
+              <p class="bg-primary mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-primary mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-primary mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-primary mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-primary mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-primary mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-primary mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-primary mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-primary mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-primary mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-primary mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-primary mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-primary mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-primary mx-3 p-2">Lorem, ipsum dolor.</p>
+              <p class="bg-primary mx-3 p-2">Lorem, ipsum dolor.</p>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

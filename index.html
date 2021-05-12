@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Responsive</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="/CSS/main.css" /> -->
+  </head>
+  <body>
+    <!-- container: contenedor con espaciado grande a los lados -->
+    <!-- container-fluid: contenedor de espaciado completo, con poco espaciado a los lados  -->
+    <div class="container">
+      <div class="row">
+        <!-- row: clase fila que por defecto divide al espacio en 12 columnas -->
+        <div class="col">
+          <!--Al tener una columna esta ocupa el espacio de las 12 columnas de la clase row  -->
+          <h1>Hola que hace</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad
+            placeat, nesciunt qui sapiente nisi excepturi incidunt, enim nam
+            repudiandae esse. Quidem minus laborum placeat facilis soluta omnis
+            quis ullam?
+          </p>
+        </div>
+        <div class="col">
+          <!-- Al tener dos columnas se dividen 6 espacios de la clase row para cada una -->
+          <h1>Hola que hace</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad
+            placeat, nesciunt qui sapiente nisi excepturi incidunt, enim nam
+            repudiandae esse. Quidem minus laborum placeat facilis soluta omnis
+            quis ullam?
+          </p>
+        </div>
+        <div class="col-3">
+          <!-- col-3: quiere decir que ocupa el espacio de 3 columnas en la clase row -->
+          <h1>Hola que hace</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad
+            placeat, nesciunt qui sapiente nisi excepturi incidunt, enim nam
+            repudiandae esse. Quidem minus laborum placeat facilis soluta omnis
+            quis ullam?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+        col-    < 576px     (dispositivos extra pequeños como celulares)
+        col-sm  >= 576px    (dispositivos pequeños)
+        col-md  >= 768px    (dispositivos medianos)
+        col-lg  >= 993px    (dispositivos largos)
+        col-xl  >= 1200px   (dispositivos extra largos)
+     -->
+
+    <div class="col-3 col-sm-6 col-md-10 col-lg-4 col-xl-9">
+      <!--  col-3       en todos los dispositivos quiero que tenga tres columnas
+            col-sm-6    a partir de dispositivo pequeño en adelante quiero que tenga 6 columnas
+            col-md-10   a partir de un dispositivo mediano en adelnate quiero que tenga 10 columnas
+            col-lg-4    a partir de un dispositivo largo en adelante quiero que tenga 4 columnas
+            col-xl-9    a partir de un dispositivo extra largo en adelante quiero que tenga 9 columnas
+         -->
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quos
+        enim, vel autem natus iusto fugiat sint necessitatibus molestias magnam
+        animi at consequuntur dicta maiores repudiandae, nulla amet in
+        repellendus.
+      </h2>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
